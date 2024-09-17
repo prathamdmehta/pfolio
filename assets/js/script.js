@@ -148,9 +148,24 @@ const initSlider = function (currentSlider) {
 
 for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
 
-// Animation when the hero section loads
-gsap.from(".hero-title", { opacity: 0, y: -50, duration: 1, ease: "power2.out" });
-gsap.from(".hero-subtitle", { opacity: 0, y: -50, duration: 1.2, ease: "power2.out", delay: 0.3 });
-gsap.from(".hero-banner img", { opacity: 0, scale: 0.8, duration: 1.5, ease: "power2.out", delay: 0.6 });
-gsap.from(".section-text", { opacity: 0, y: 50, duration: 1.2, ease: "power2.out", delay: 0.9 });
-gsap.from(".btn", { opacity: 0, scale: 0.8, duration: 1, ease: "back.out(1.7)", delay: 1.2 });
+// Select the custom cursor element
+const cursor = document.querySelector('.custom-cursor');
+
+// Add an event listener to track mouse movement
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = `${e.pageX}px`;
+    cursor.style.top = `${e.pageY}px`;
+});
+
+// Optional: Add hover effect for clickable items like buttons or links
+const hoverElements = document.querySelectorAll('a, button');
+
+hoverElements.forEach(element => {
+    element.addEventListener('mouseover', () => {
+        cursor.style.transform = 'scale(1.5)'; // Enlarge on hover
+    });
+
+    element.addEventListener('mouseout', () => {
+        cursor.style.transform = 'scale(1)'; // Return to normal size
+    });
+});
