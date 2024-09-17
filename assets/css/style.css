@@ -24,7 +24,7 @@
 
   --fs-1: 4.8rem;
   --fs-2: 4.5rem;
-  --fs-3: 3.8rem;
+  --fs-3: 4rem;
   --fs-4: 2.4rem;
   --fs-5: 2rem;
   --fs-6: 1.8rem;
@@ -114,6 +114,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.75;
   overflow: hidden;
+  position: relative;
 }
 
 body.loaded { overflow: overlay; }
@@ -129,7 +130,17 @@ body.nav-active { overflow: hidden; }
   border-radius: 20px;
 }
 
-
+.custom-cursor {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none; /* Make sure it's not clickable */
+  transform: translate(-50%, -50%); /* Center the circle on the cursor */
+  transition: transform 0.1s ease-out; /* Optional smooth movement */
+  z-index: 9999; /* Stay on top of all elements */
+}
 
 
 
