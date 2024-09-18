@@ -719,6 +719,57 @@ The first time I heard the word "tween", I wasn't totally sure what it meant. Si
       </article>
     </main>
 
+    <!-- CONTACT FORM -->
+    <section id="contact" class="contact sec-pad dynamicBg">
+          <p class="section-subtitle" id="blog-label">Let’s Connect</p>
+          <h2 class="h2 section-titles">Contact</h2>
+        <div class="contact__form-container">
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+            <div class="contact__form-field">
+              <!-- Replace with your Access Key -->
+              <input type="hidden" name="access_key" value="05ee6075-04ef-43f5-beb9-86ef23bf97a0">
+              
+              <!-- Form Inputs. Each input must have a name="" attribute -->
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              Submit
+            </button>
+          </form>
+        </div>
+    </section>
+
     <!-- 
     - #FOOTER
   -->
