@@ -761,6 +761,10 @@ body.nav-active {
   border-color: var(--white);
 }
 
+/*-----------------------------------*\
+  #CONTACT
+\*-----------------------------------*/
+
 .contact {
   background-position: center;
 }
@@ -792,21 +796,19 @@ body.nav-active {
   padding: 10px 10px;
   border-radius: 5px;
   margin-bottom: 2rem;
+  width: 30%;
+  padding: 2rem 4rem;
+  font-size: 1.6rem;
 }
 
 .contact__form-field {
   margin-bottom: 4rem;
 }
-.section-subtitle {
+#blog-labels {
   margin-left: 21rem;
 }
 .section-texts {
   margin-left: 21rem;
-}
-.submit-btn {
-  width: 30%;
-  padding: 2rem 4rem;
-  font-size: 1.6rem;
 }
 
 .contact__form-label {
@@ -828,12 +830,6 @@ body.nav-active {
   background: #f0f0f0;
   border-radius: 5px;
   font-weight: 600;
-  /* Code for Modern Browsers */
-  /* Code for WebKit, Blink, Edge */
-  /* Code for Internet Explorer 10-11 */
-  /* Code for Microsoft Edge */
-  /* Code for Mozilla Firefox 4 to 18 */
-  /* Code for Mozilla Firefox 19+ */
 }
 .contact__form-input::placeholder {
   color: #999;
@@ -893,7 +889,7 @@ body.nav-active {
   .section-titles{
     margin-left: 1rem;
   }
-  .section-subtitle{
+  #blog-labels{
     margin-left: 1rem;
   }
 
